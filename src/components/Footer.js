@@ -5,17 +5,7 @@ function Footer(){
         <React.Fragment>
 		<footer>
     <div className="top-footer">
-    <section>
-        <h3>Contacto</h3>
-        <ul>
-            <li>Dirección</li>
-            <li>Telefono</li>
-            <li>Mail</li>
-        </ul>
-    </section>
-    <section>
-        <h3><a href="/" >About us</a></h3>
-    </section>
+ 
     <section>
         <h3><a href="/" >Terminos y Condiciones</a></h3>
     </section>

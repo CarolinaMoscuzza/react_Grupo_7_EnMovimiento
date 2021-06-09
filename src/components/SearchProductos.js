@@ -12,7 +12,7 @@ function SearchProductos(){
 	// Credenciales de API
 	//const apiKey = " " ; // Intenta poner cualquier cosa antes para probar
 
-	const url = "http://localhost:3000/api/productos"
+	const url = "/api/productos"
 	
 	
 	useEffect(() => {

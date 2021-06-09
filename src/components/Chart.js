@@ -3,14 +3,14 @@ import ChartRow from './ChartRow';
 
 let tableRowsData = [
     {
-        Nombre: 'Bolso Negro Nike ',
-        Size: 'Unico',
+        Nombre: 'Bolso Sport Unisex ',
+        Size: ['Unico'], 
         Categoria: ['En oferta'],
         
     },
     {
         Nombre: 'Zapatillas',
-        Size: '44-46',
+        Size: ['44', '46'],
         Categoria: ['Novedad'],
         
     },

@@ -12,8 +12,9 @@ function UltimoProductoInDb(){
                     <div className="text-center">
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenFondo} alt=" Star Wars - Mandalorian "/>
                     </div>
-                    <p>La Vida es Movimiento, quedarse quieto no es una opcion. Hagas lo que hagas, hazlo intensamente</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View Products</a>
+                    <p>La vida Es Movimiento, quedarse quieto no es una opción!!!!</p>
+                    <p>Hagas lo que hagas, hazlo intensamente</p>
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver Productos</a>
                 </div>
             </div>
         </div>
