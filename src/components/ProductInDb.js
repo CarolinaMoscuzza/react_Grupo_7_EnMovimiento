@@ -31,9 +31,9 @@ class ProductInDb extends Component {
 								<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 									<thead>
 										<tr>
-											<th>SKU</th>
+											<th>ID/SKU</th>
                                             <th>Nombre</th>
-                                            <th>Precio</th>
+                                            <th>Descripción</th>
 										</tr>
 									</thead>
 									<tfoot>
