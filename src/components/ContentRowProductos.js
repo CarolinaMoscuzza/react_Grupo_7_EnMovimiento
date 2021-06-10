@@ -37,9 +37,9 @@ function ContentRowProductos(){
     
         <div className="row">
             
-            {cartProps.map( (movie, i) => {
+            {cartProps.map( (producto, i) => {
 
-                return <SmallCard {...movie} key={i}/>
+                return <SmallCard {...producto} key={i}/>
             
             })}
 

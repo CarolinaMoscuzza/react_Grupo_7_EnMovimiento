@@ -1,10 +1,10 @@
 import React from 'react';
 import image from '../assets/images/LogoNew5.png';
 import ContentWrapper from './ContentWrapper';
-import ProductosInDb from './ProductosInDb';
 import UltimoProductoInDb from './UltimoProductoInDb';
 import ContentRowProductos from './ContentRowProductos';
-import SearchProductos from './SearchProductos';
+import ProductList from './ProductList';
+import ProductInDb from './ProductInDb';
 import NotFound from './NotFound';
 import {Link, Route, Switch} from 'react-router-dom';
 
@@ -27,8 +27,9 @@ function SideBar(){
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
                     <Link className="nav-link" to="/">
+                        
                         <i className="fas fa-running"></i>
-                        <span>En Movimiento</span></Link>
+                        <span> Menu </span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -39,7 +40,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                <Link className="nav-link" to="/">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Pages</span>
                     </Link>
@@ -63,7 +64,7 @@ function SideBar(){
                 <hr className="sidebar-divider d-none d-md-block"/>
                 
                 <li className="nav-item nav-link">
-                    <Link className="nav-link" to="/SearchProductos">
+                    <Link className="nav-link" to="/ProductList">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Buscar Productos</span></Link>
                 </li>
@@ -96,17 +97,17 @@ function SideBar(){
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/ProductosInDb">
-                    <ProductosInDb />
-                </Route>
+                <Route path="/ProductInDb">
+                    <ProductInDb />
+                </Route> 
                 <Route path="/UltimoProductoInDb">
                     <UltimoProductoInDb />
                 </Route>
                 <Route path="/ContentRowProductos">
                     <ContentRowProductos />
                 </Route>
-                <Route path="/SearchProductos">
-                    <SearchProductos />
+                <Route path="/ProductList">
+                    <ProductList />
                 </Route>
                 <Route component={NotFound} />
             </Switch>

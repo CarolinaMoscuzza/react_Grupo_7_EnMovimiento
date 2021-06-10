@@ -6631,6 +6631,7 @@ button.bg-dark:hover {
 }
 .w-50 {
   width: 50% !important;
+  margin-top: 15px;
 }
 .w-75 {
   width: 75% !important;
@@ -6737,6 +6738,7 @@ button.bg-dark:hover {
 .mb-2,
 .my-2 {
   margin-bottom: 0.5rem !important;
+  
 }
 .ml-2,
 .mx-2 {

@@ -1,5 +1,6 @@
 import React from 'react';
 import imagenFondo from '../assets/images/deportista.jpg';
+import ProductList from './ProductList';
 
 function UltimoProductoInDb(){
     return(
@@ -12,9 +13,13 @@ function UltimoProductoInDb(){
                     <div className="text-center">
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenFondo} alt=" Star Wars - Mandalorian "/>
                     </div>
+                    <center>
+
                     <p>La vida Es Movimiento, quedarse quieto no es una opción!!!!</p>
                     <p>Hagas lo que hagas, hazlo intensamente</p>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver Productos</a>
+                    
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/ProductList">Ver Productos</a>
+                </center>
                 </div>
             </div>
         </div>

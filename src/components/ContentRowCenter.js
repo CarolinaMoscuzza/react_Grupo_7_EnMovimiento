@@ -1,6 +1,6 @@
 import React from 'react';
 import UltimoProductoInDb from './UltimoProductoInDb';
-import ProductosInDb from './ProductosInDb';
+import MarcasInDb from './MarcasInDb';
 
 function ContentRowCenter(){
     return (
@@ -10,8 +10,9 @@ function ContentRowCenter(){
             <UltimoProductoInDb />
             {/*<!-- End content row ULTIMO PRODUCTO in Data Base -->*/}
 
-            {/*<!-- Productos in DB -->*/}
-            <ProductosInDb />
+            {/*<!-- Categorias in DB -->*/}
+            <MarcasInDb />
+            
 
         </div>
     )
