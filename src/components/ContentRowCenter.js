@@ -1,16 +1,18 @@
 import React from 'react';
-import UltimoProductoInDb from './UltimoProductoInDb';
+import Panel from './Panel';
 import MarcasInDb from './MarcasInDb';
+import Usuarios from './Usuarios';
 
 function ContentRowCenter(){
     return (
         <div className="row">
             
-            {/*<!-- LULTIMO PRODUCTO in DB -->*/}
-            <UltimoProductoInDb />
-            {/*<!-- End content row ULTIMO PRODUCTO in Data Base -->*/}
+            {/*<!-- Slider -->*/}
+            <Panel />
+            <Usuarios />
+            {/*<!-- End content row Slider -->*/}
 
-            {/*<!-- Categorias in DB -->*/}
+            {/*<!-- Marcas in DB -->*/}
             <MarcasInDb />
             
 

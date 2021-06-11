@@ -4500,11 +4500,11 @@ a.badge-dark:focus {
 .alert-warning .alert-link {
   color: #574516;
 }
-.alert-danger {
+/*.alert-danger {
   color: #78261f;
   background-color: #fadbd8;
   border-color: #f8ccc8;
-}
+}*/
 .alert-danger hr {
   border-top-color: #f5b7b1;
 }

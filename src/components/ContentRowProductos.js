@@ -6,16 +6,16 @@ import SmallCard from './SmallCard';
 /* <!-- Productos en DB --> */
 
 let productosInDB = {
-    title: 'Productos in Data Base',
+    title: 'Productos',
     color: 'primary', 
-    cuantity: 21,
+    cuantity: 24,
     icon: 'fa-clipboard-list'
 }
 
 /* <!-- Total Categorias --> */
 
 let totalCategorias = {
-    title:' Total Categorias', 
+    title:' Categorias', 
     color:'success', 
     cuantity: 2,
     icon:'fa-award'
@@ -24,9 +24,9 @@ let totalCategorias = {
 /* <!-- Usuarios quantity --> */
 
 let usersQuantity = {
-    title:'Users quantity' ,
+    title:'Users' ,
     color:'warning',
-    cuantity: 3,
+    cuantity: 4,
     icon:'fa-user-check'
 }
 

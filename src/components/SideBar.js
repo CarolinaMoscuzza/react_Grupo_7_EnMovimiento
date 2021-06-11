@@ -1,8 +1,10 @@
 import React from 'react';
 import image from '../assets/images/LogoNew5.png';
 import ContentWrapper from './ContentWrapper';
-import UltimoProductoInDb from './UltimoProductoInDb';
+import Panel from './Panel';
 import ContentRowProductos from './ContentRowProductos';
+import BuscarProductos from './BuscarProductos';
+import BuscarUsuarios from './BuscarUsuarios';
 import ProductList from './ProductList';
 import ProductInDb from './ProductInDb';
 import NotFound from './NotFound';
@@ -54,23 +56,23 @@ function SideBar(){
                 </li>
 
                 {/*<!-- Nav Item - Tables -->*/}
-                <li className="nav-item nav-link">
+                {/*<!--<li className="nav-item nav-link">
                 <Link className="nav-link" to="/ContentRowProductos">
                         <i className="fas fa-shopping-bag"></i>
                         <span>Compras</span></Link>
-                </li>
+                </li>-->*/}
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
                 
-                <li className="nav-item nav-link">
-                    <Link className="nav-link" to="/ProductList">
+                 <li className="nav-item nav-link">
+                    <Link className="nav-link" to="/BuscarProductos">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Buscar Productos</span></Link>
                 </li>
 
                 <li className="nav-item nav-link">
-                    <Link className="nav-link" to="/SearchUsuarios">
+                    <Link className="nav-link" to="/BuscarUsuarios">
                         <i className="fas fa-user"></i>
                         <span>Buscar Usuarios</span></Link>
                 </li>
@@ -100,11 +102,17 @@ function SideBar(){
                 <Route path="/ProductInDb">
                     <ProductInDb />
                 </Route> 
-                <Route path="/UltimoProductoInDb">
-                    <UltimoProductoInDb />
+                <Route path="/Panel">
+                    <Panel />
                 </Route>
                 <Route path="/ContentRowProductos">
                     <ContentRowProductos />
+                </Route>
+                <Route path="/BuscarProductos">
+                    <BuscarProductos />
+                </Route>
+                <Route path="/BuscarUsuarios">
+                    <BuscarUsuarios />
                 </Route>
                 <Route path="/ProductList">
                     <ProductList />

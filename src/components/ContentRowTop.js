@@ -2,7 +2,7 @@ import React from 'react';
 import ContentRowCenter from './ContentRowCenter';
 import ContentRowProductos from './ContentRowProductos';
 import ProductInDb from './ProductInDb';
-import MarcasInDb from './MarcasInDb';
+
 
 function ContentRowTop(){
     return(
@@ -10,8 +10,7 @@ function ContentRowTop(){
 				{/*<!-- Content Row Top -->*/}
 				<div className="container-fluid">
 					<div className="d-sm-flex aligns-items-center justify-content-between mb-5">
-						
-						<h1 className="h3 mb-0 text-blue-800">DASHBOARD by Gustavo Amil, María Bizari y A. Carolina Moscuzza</h1>
+						<h1 className="h3 mb-0 text-blue-800">DASHBOARD by María Bizari, Gustavo Amil y A. Carolina Moscuzza</h1>
 						</div>	
 					
 				

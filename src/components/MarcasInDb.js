@@ -6,13 +6,13 @@ class MarcasInDb extends Component {
 		super(props);
 		this.state = {
 			categoriasList: [],
-			data: ["count", "countByCategory", "products"]
+			
 		}
 	}
 
 		componentDidMount(){
         fetch('/api/productos').then(r=>r.json()).then(respuesta=>{
-			this.setState({categoriasList: respuesta.data["countByCategory"]})
+			this.setState({categoriasList: respuesta.data.countByCategory})
 			console.log(respuesta)
         })
     }
@@ -31,8 +31,8 @@ class MarcasInDb extends Component {
 								<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 									<thead>
 										<tr>
-                                            <th>NOMBRE</th>
-											<th>CANTIDAD EN STOCK</th>
+                                            <th>Nombre</th>
+											<th>Cantidad en Stock</th>
 										</tr>
 									</thead>
 									<tfoot>

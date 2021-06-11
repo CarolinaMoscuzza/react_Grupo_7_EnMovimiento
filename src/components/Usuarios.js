@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import ProductList from "./ProductList"
+import ListaUsuarios from "./ListaUsuarios"
 
-class ProductInDb extends Component {
+class Usuarios extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			productsList: [],
-			data: ["count", "countByCategory", "products"]
+			usersList: [],
+			
 		}
 	}
 
 		componentDidMount(){
-        fetch('/api/productos').then(r=>r.json()).then(respuesta=>{
-			this.setState({productsList: respuesta.data["products"]})
-			//console.log(respuesta)
+        fetch('/api/users').then(r=>r.json()).then(respuesta=>{
+			this.setState({usersList: respuesta.data.usuarios})
+			
         })
     }
 	render(){ 
@@ -21,8 +21,8 @@ class ProductInDb extends Component {
 
 			<React.Fragment>
 				<div className="container-fluid">
-						 {/*<!-- PRODUCTS LIST -->*/}
-					<h1 className="h3 mb-2 text-gray-800">Productos de la Base de Datos <i className="fas fa-database"></i> </h1>
+						 {/*<!-- Lista de Usuarios -->*/}
+					<h1 className="h3 mb-2 text-gray-800">Usuarios Registrados <i className="fas fa-id-card"></i> </h1>
 					
 					{/*<!-- DataTales Example -->*/}
 					<div className="card shadow mb-4">
@@ -31,17 +31,19 @@ class ProductInDb extends Component {
 								<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
 									<thead>
 										<tr>
-											<th>ID/SKU</th>
+											<th>ID</th>
                                             <th>Nombre</th>
-                                            <th>Descripción</th>
+											<th>Apellido</th>
+                                            <th>Correo Electronico</th>
+                                           
 										</tr>
 									</thead>
 									<tfoot>
 									</tfoot>
 									<tbody>
 										{
-											this.state.productsList.map((products,i) => {
-												return <ProductList key={i} {...products} />
+											this.state.usersList.map((users,i) => {
+												return <ListaUsuarios key={i} {...users} />
 											})
 										}
 									</tbody>
@@ -56,4 +58,4 @@ class ProductInDb extends Component {
 	}
 }
  
-export default ProductInDb;
+export default Usuarios;
