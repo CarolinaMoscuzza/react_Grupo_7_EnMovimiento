@@ -20,15 +20,7 @@ function Categorias() {
               <div className="card bg-dark text-white shadow">
                 <div className="card-body">EN OFERTA</div>
               </div>
-            </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card bg-dark text-white shadow">
-                <div className="card-body">MAS VISITADO</div>
-              </div>
-            </div>
-           
-         
-           
+            </div>           
             </div>
           </div>
         </div>
