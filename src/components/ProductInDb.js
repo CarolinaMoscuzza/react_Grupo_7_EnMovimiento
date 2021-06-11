@@ -6,13 +6,13 @@ class ProductInDb extends Component {
 		super(props);
 		this.state = {
 			productsList: [],
-			data: ["count", "countByCategory", "products"]
+			
 		}
 	}
 
 		componentDidMount(){
         fetch('/api/productos').then(r=>r.json()).then(respuesta=>{
-			this.setState({productsList: respuesta.data["products"]})
+			this.setState({productsList: respuesta.data.products})
 			//console.log(respuesta)
         })
     }
@@ -34,6 +34,7 @@ class ProductInDb extends Component {
 											<th>ID/SKU</th>
                                             <th>Nombre</th>
                                             <th>Descripción</th>
+											
 										</tr>
 									</thead>
 									<tfoot>

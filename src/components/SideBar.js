@@ -23,7 +23,7 @@ function SideBar(){
                     </div>
                 </a>
 
-                {/*<!-- Divider -->*/}
+                {/*<!-- Linea Divisora -->*/}
                 <hr className="sidebar-divider my-0"/>
 
                 {/*<!-- Nav Item - Dashboard -->*/}
@@ -34,7 +34,7 @@ function SideBar(){
                         <span> Menu </span></Link>
                 </li>
 
-                {/*<!-- Divider -->*/}
+                {/*<!-- Division -->*/}
                 <hr className="sidebar-divider"/>
 
                 {/*<!-- Heading -->*/}
@@ -62,7 +62,7 @@ function SideBar(){
                         <span>Compras</span></Link>
                 </li>-->*/}
 
-                {/*<!-- Divider -->*/}
+                {/*<!-- Division -->*/}
                 <hr className="sidebar-divider d-none d-md-block"/>
                 
                  <li className="nav-item nav-link">
@@ -79,22 +79,9 @@ function SideBar(){
             </ul>
             {/*<!-- End of Sidebar -->*/}
 
-            {/*<!-- Microdesafio 1 -->*/}
-            {/*<!--<Route exact path="/">
-                <ContentWrapper />
-            </Route>
-            <Route path="/GenresInDb">
-                <GenresInDb />
-            </Route>
-            <Route path="/UltimoProductoInDb">
-                <UltimoProductoInDb />
-            </Route>
-            /*<!--<Route path="/ContentRowMovies">
-              /*<!--  <ContentRowMovies />
-            </Route>*/}
-            {/*<!-- End Microdesafio 1 -->*/}
+           
 
-            {/*<!-- End Microdesafio 2 -->*/}
+            {/*<!-- Rutas -->*/}
             <Switch>
                 <Route exact path="/">
                     <ContentWrapper />
@@ -119,7 +106,7 @@ function SideBar(){
                 </Route>
                 <Route component={NotFound} />
             </Switch>
-            {/*<!-- End Microdesafio 2 -->*/}
+            {/*<!-- Fin de Rutas-->*/}
         </React.Fragment>
     )
 }

@@ -14,7 +14,7 @@ function BuscarUsuarios(){
 	// Credenciales de API
 	//const apiKey = '1e5a7b6f'; // Intenta poner cualquier cosa antes para probar
 	
-	const url = `/api/users/${keyword}`; //Hay q ver como hacer q filtre por los diferentes productos por ID
+	const url = "/api/users/:id" //Hay q ver como hacer q filtre por los diferentes productos por ID
     //`http://www.omdbapi.com/?s=${keyword}&apikey=${apiKey}`
 	
 	useEffect(() => {

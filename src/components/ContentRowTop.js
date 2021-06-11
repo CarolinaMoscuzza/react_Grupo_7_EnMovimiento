@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentRowCenter from './ContentRowCenter';
 import ContentRowProductos from './ContentRowProductos';
-import ProductInDb from './ProductInDb';
+
 
 
 function ContentRowTop(){
@@ -17,7 +17,7 @@ function ContentRowTop(){
 					{/*<!-- Content Row Productos-->*/}
 					<ContentRowProductos />
 					<ContentRowCenter />
-					<ProductInDb />
+				
 					
 					
 	

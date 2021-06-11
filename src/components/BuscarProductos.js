@@ -1,3 +1,4 @@
+
 import React,{useState, useEffect, useRef} from 'react';
 
 
@@ -55,7 +56,7 @@ function BuscarProductos(){
 						</div>
 						{/* Listado de Productos */}
 						{
-							products.length > 0 && products.map((producto, i) => {
+							products.length > 0 && products.map((products, i) => {
 								return (
 									<div className="col-sm-6 col-md-3 my-4" key={i}>
 										<div className="card shadow mb-4">
