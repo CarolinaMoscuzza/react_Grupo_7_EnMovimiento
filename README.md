@@ -1,2 +1,2 @@
 # react_Grupo_7_EnMovimiento
-repositorio destinado para el dashboard de React en el proyecto integrador
+repositorio destinado para el dashboard en React de la app 
